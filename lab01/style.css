@@ -1,6 +1,131 @@
-.body {
-    
+body {
+  background-color: #e4e0e1;
+  font: monospace;
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
-.div_red {
+.main_div {
+  max-width: 60%;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.top_div {
+  text-align: center;
+  background-color: #ab886d;
+  max-width: 90%;
+  margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.bottom_div {
+  /* background-color: #d6c0b3; */
+  max-width: 90%;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-radius: 4rem;
+    padding: 1rem; */
+}
+.greenlink:link,
+.greenlink:visited {
+  color: rgb(22, 59, 28);
+}
+.redlink:link,
+.redlink:visited {
+  color: darkred;
+}
+.bluelink:link,
+.bluelink:visited {
+  color: cadetblue;
+}
+.listspace {
+  margin-bottom: 1%;
+}
+.homelink:link,
+.homelink:visited {
+  color: black;
+}
+#paragraph_div {
+  text-align: justify;
+}
+#article_author {
+  font-style: italic;
+  color: rgb(132, 117, 30);
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 3px solid #493628;
+  width: 70%;
+  border-collapse: collapse;
+}
+tr,
+td,
+th {
+  border: 3px solid #493628;
+}
 
+#red_square {
+  background-color: red;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+#green_square {
+  background-color: green;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  margin-left: 1rem;
+  margin-right: auto;
+  overflow: hidden;
+}
+#blue_square {
+  background-color: blue;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+#yellow_square {
+  background-color: yellow;
+  color: yellow;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  overflow: hidden;
+}
+#img_square {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  margin-left: 1rem;
+  margin-right: auto;
+  overflow: hidden;
+}
+#padding {
+  padding: 1rem;
 }
