@@ -171,6 +171,11 @@ iframe {
   section.center_section {
     position: sticky;
     flex-direction: inherit;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  p {
+    font-size: 25;
   }
   aside {
     /* order: 2;
