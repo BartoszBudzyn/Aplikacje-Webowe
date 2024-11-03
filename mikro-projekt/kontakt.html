@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+        <script src="walidacja_formularz.js" defer></script>
     </head>
     <body>
         <div class="main">
@@ -35,14 +36,14 @@
                     <a id="nav_links" href="kontakt.html">Kontakt</a>
                 </nav>
                 <section class = "center_section">
-                    <form>
+                    <form id="formularz">
                         <label for="imie">Imię</label><br>
-                        <input type="text" id="imie" name="fname"><br>
+                        <input type="text" id="imie" name="imie" reqired><br>
                         <label for="email">Podaj email:</label><br>
-                        <input type="text" id="email" name="lname" placeholder="mamproblem@poczta.domena"><br>
-                        <label for="problem">Napisz do nas!</label><br>
-                        <textarea class="textarea"></textarea><br>
-                        <input type="submit">
+                        <input type="text" id="email" name="email" placeholder="mamproblem@poczta.domena" requred><br>
+                        <label for="problem" required>Napisz do nas!</label><br>
+                        <textarea id="problem" class="textarea" name="problem"></textarea><br>
+                        <button type="submit">Prześlij</button>
                     </form>
                 </section>
                 <aside>
