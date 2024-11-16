@@ -1,0 +1,26 @@
+<head>
+  <title>Generator haseł</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="password_div">
+    <label for="min_characters">Minimalna liczba znaków</label>
+    <input type="text" id="min_characters" placeholder="min_characters" />
+    <br />
+    <label for="max_characters">Maksymalna liczba znaków</label>
+    <input type="text" id="max_characters" placeholder="max_characters" />
+    <br />
+    <label for="litery">Czy hasło ma zawierać wielkie litery?</label>
+    <input type="checkbox" id="litery" />
+    <br />
+    <label for="znaki">Czy hasło ma zawierać znaki specjalne?</label>
+    <input type="checkbox" id="znaki" />
+    <br />
+    <button onclick="generatePassword()">Generuj hasło</button>
+    <br>
+    <label for="password">Wygenerowane hasło</label>
+    <input type="text" id="password" readonly />
+  </div>
+</body>
