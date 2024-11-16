@@ -1,15 +1,22 @@
-const max_characters = document.getElementById('max_characters');
-const min_characters = document.getElementById('min_characters');
-const litery = document.getElementById('litery');
-const znaki = document.getElementById('znaki');
-
-const lowercaseLetters = 'abcdefghijklmnopqrstuvwxyz';
-const uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-const specialCharacters = '!@#$%^&*()_+[]{}|;:,.<>?';
+const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
+const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const specialCharacters = "!@#$%^&*()_+[]{}|;:,.<>?";
 
 function generatePassword() {
-    const length = Math.floor(Math.random() * (max_characters.value - min_characters.value + 1)) + min_characters.value;
-    let password = '';
+    const max_characters = parseInt(
+        document.getElementById("max_characters").value,
+        10
+    );
+    const min_characters = parseInt(
+        document.getElementById("min_characters").value,
+        10
+    );
+    const litery = document.getElementById("litery");
+    const znaki = document.getElementById("znaki");
+    const len = Math.floor(
+        Math.random() * (max_characters - min_characters + 1) + min_characters
+    );
+    let password = "";
     let characters = lowercaseLetters;
     if (litery.checked) {
         characters += uppercaseLetters;
@@ -17,8 +24,10 @@ function generatePassword() {
     if (znaki.checked) {
         characters += specialCharacters;
     }
-    for (let i = 0; i < length; i++) {
-        password += characters.charAt(Math.floor(Math.random() * characters.length));
+    for (let i = 0; i < len; i++) {
+        password += characters.charAt(
+            Math.floor(Math.random() * characters.length)
+        );
     }
-    alert(`Wygenerowane hasło to:`$(password));
+    alert(`Wygenerowane hasło to: ` + password);
 }
