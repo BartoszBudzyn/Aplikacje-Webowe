@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div>
+            <input type="text" id="searchbar" placeholder="Szukaj..." />
+            <select id="selectList">
+                <option value="original">Kolejność oryginalna</option>
+                <option value="asc">Tytuł rosnąco</option>
+                <option value="desc">Tytuł malejąco</option>
+            </select>
+            <button onclick="sortProducts()">Szukaj</button>
+        </div>
+        <div id="container" class="container"></div>
+    </body>
+</html>

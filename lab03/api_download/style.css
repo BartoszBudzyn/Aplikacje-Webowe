@@ -1,0 +1,15 @@
+
+.generated-div {
+    width: 80%;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.generated-div img {
+    width: 100px;
+    height: 100px;
+}
