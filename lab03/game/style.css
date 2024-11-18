@@ -1,0 +1,47 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    background-image: url("images/board-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+html {
+    cursor: url("images/cursor.png") 64 64, auto;
+}
+#animation {
+    background-image: url("images/walkingdead.png");
+    background-repeat: no-repeat;
+    height: 312px;
+    width: 200px;
+}
+#points-display {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    z-index: 1000;
+}
+#lives-display {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+#heart-icon {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
