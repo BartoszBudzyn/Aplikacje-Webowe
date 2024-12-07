@@ -1,0 +1,19 @@
+### Dodanie książki
+POST http://localhost:3000/api/books
+Content-Type: application/json
+
+{
+    "title": "Przykładowa Książka",
+    "author": "Jan Kowalski",
+    "year": 2024
+}
+
+
+### Pokaż wszystkie książki
+GET http://localhost:3000/api/books
+
+### Pokaż książkę o podanym id
+GET http://localhost:3000/api/books/2
+
+### Usuń książkę
+DELETE http://localhost:3000/api/books/1

@@ -1,0 +1,23 @@
+### Get all orders for a specific user
+GET http://localhost:3001/api/orders/2
+
+### Create a new order
+POST http://localhost:3001/api/orders
+Content-Type: application/json
+
+{
+    "book_id": 0,
+    "user_id": 2,
+    "quantity": 2
+}
+
+### Update an order's quantity
+PATCH http://localhost:3001/api/orders/1
+Content-Type: application/json
+
+{
+    "quantity": 15
+}
+
+### Delete an order
+DELETE http://localhost:3001/api/orders/1
