@@ -1,5 +1,5 @@
 import React from "react";
-import Produkt from "./produkt";
+import Produkt from "./Produkt";
 
 const NowyKoszyk: React.FC = () => {
     const produkty = ["Chleb", "Mleko", "Jajka", "Ser", "Jabłka"];
